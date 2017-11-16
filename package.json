@@ -3,7 +3,13 @@
   "version": "0.0.1",
   "description": "How to make website in Hong Kong",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "marked": "^0.3.6"
+  },
   "devDependencies": {
+    "glob": "^7.1.2",
+    "moment": "^2.19.2",
+    "nunjucks": "^3.0.1",
+    "shelljs": "^0.7.8"
   }
 }

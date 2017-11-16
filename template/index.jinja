@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="description" content="How to make websites in Hong Kong?">
+    <meta property="og:description" content="How to make websites in Hong Kong?">
+    <meta property="og:site_name" content="How to make websites in Hong Kong?">
+    <meta property="og:title" content="How to make websites in Hong Kong?">
+    <title>How to make websites in Hong Kong?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        .greeting-box {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .greeting-box .main {
+            font-size: 1.6rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .greeting-box .description {
+            font-size: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .greeting-box {
+                margin-top: 25px;
+                margin-bottom: 55px;
+            }
+            .greeting-box .main {
+                font-size: 2.5rem;
+            }
+            .greeting-box .description {
+                font-size: 1.5rem;
+            }
+        }
+
+
+        .card {
+            border: 1px solid #E0E0E0;
+            border-radius: 2px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 2px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+        .step-box {
+            margin-bottom: 15px;
+        }
+
+        .number-box {
+            text-align: center;
+            display: none;
+        }
+
+        .number {
+            background: #E0E0E0;
+            color: white;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .step-box .title {
+            font-weight: bold;
+            font-size: 1.33rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .step-box .subtitle {
+            text-align: center;
+            font-size: 1rem;
+            color: #757575;
+            margin-bottom: 15px;
+        }
+
+        .step-box .description {
+            min-height: 220px;
+            font-size: 1rem;
+            display: none;
+        }
+
+        .step-box a {
+
+        }
+
+        .bg {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .bg > .title {
+            text-align: center;
+            font-size: 1.33rem;
+            margin-bottom: 15px;
+        }
+
+        .bg.-grey {
+            background: #F5F5F5;
+        }
+
+        .bg .description-box {
+            text-align: center;
+            font-size: 1rem;
+            color: #616161;
+        }
+
+        .bg .cta {
+            margin-top: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .bg {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+            .bg > .title {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            .bg .cta {
+                margin-top: 1.5rem;
+            }
+        }
+
+        html {
+            font-size: 16px;
+        }
+        @media (min-width: 768px) {
+            html {
+                font-size: 18px;
+            }
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .item-box {
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            background-color: white;
+        }
+
+        .item-box:nth-child(even) {
+            background-color: #F5F5F5;
+        }
+
+        .item-box.-header {
+            font-weight: bold;
+        }
+
+        .item-box .title {
+            font-weight: bold;
+        }
+
+        .mobile-hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-color: #BDBDBD;
+            border-style: dashed;
+            border-top-width: 2px;
+        }
+
+        .header-box .title {
+            font-size: 1.33rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .header-box .description {
+            font-size: 1rem;
+            color: #616161;
+        }
+
+        #return-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.7);
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+            border-radius: 35px;
+            -webkit-border-radius: 35px;
+            -moz-border-radius: 35px;
+            z-index: 10;
+        }
+        #return-to-top i {
+            color: #fff;
+            margin: 0;
+            position: relative;
+            left: 16px;
+            top: 13px;
+            font-size: 19px;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        section table {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">How to make websites in Hong Kong?</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#services">Hosting Service</a></li>
+                <li><a href="#profiles">Vendor Profiles</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="greeting-box">
+                <div class="main">How to make websites in Hong Kong?</div>
+                <div class="description">
+                    Checkout what option do you have before seeking for a vendor<br>
+                    Listing out Hosting Service, Vendor Profiles, Service List
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg -grey" id='top'>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <div class="step-box card">
+                    <div class="number-box">
+                        <span class="number">1</span>
+                    </div>
+                    <div class="title">
+                        Hosting Service
+                    </div>
+                    <div class="subtitle">
+                        Check if there is one suitable
+                    </div>
+                    <a href='#services' class="btn btn-primary btn-block">
+                        Checkout the hosting service
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="step-box card">
+                    <div class="number-box">
+                        <span class="number">2</span>
+                    </div>
+                    <div class="title">
+                        Vendor
+                    </div>
+                    <div class="subtitle">
+                        Pick one you like to quote for price
+                    </div>
+                    <a href='#profiles' class="btn btn-primary btn-block">
+                        Checkout the vendor profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="services" class="bg">
+    {{- hosting | safe -}}
+</section>
+
+<section id="profiles" class="bg">
+    <h1 class="title">Vendor</h1>
+    To be completed...
+</section>
+
+
+<a href="#top" id='return-to-top'><i class="fa fa-chevron-up"></i></a>
+<br>
+
+<div class="container">
+    <div class='row'>
+        <div class='col-md-12'>
+            <br>
+            <p class="pull-left">
+                Maintained by <a href='https://tonyhhyip.me' target="_blank">Tony Yip</a>
+            </p>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  !function ($) {
+    $('section h1').addClass('title');
+    $('section table').addClass('table')
+  }(window.jQuery)
+</script>
+</body>
+</html>
