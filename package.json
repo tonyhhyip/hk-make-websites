@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "How to make website in Hong Kong",
   "license": "MIT",
+  "scripts": {
+    "build": "node build/build"
+  },
   "dependencies": {
     "marked": "^0.3.6"
   },
