@@ -1,0 +1,9 @@
+{
+  "name": "make-websites",
+  "version": "0.0.1",
+  "description": "How to make website in Hong Kong",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+  }
+}
