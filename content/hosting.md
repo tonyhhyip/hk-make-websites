@@ -19,7 +19,7 @@
         </div>
         <div class='col-md-6'>
             <div class="alert alert-success" role="alert">
-                <strong>上次更新資料時間</strong>：2017-11-16 23:52
+                <strong>上次更新資料時間</strong>：2017-11-17 22:07
             </div>
         </div>
     </div>
