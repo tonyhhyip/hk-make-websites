@@ -1,4 +1,4 @@
-# Domain
+# Domain Retailer
 
 <div class="container">
     <div class="row">
