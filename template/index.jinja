@@ -13,6 +13,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        .navbar-inverse {
+            background: #222;
+            border-color: #080808;
+            border-radius: 0;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background: #337ab7;
+            border-color: #2e6da4;
+        }
+
+        .alert-info {
+            color: #31708f;
+            backgroun: #d9edf7;
+            border-color: #bce8f1;
+        }
+
+        .alert-success {
+            color: #3c763d;
+            background: #dff0d8;
+            border-color: #d6e9c6;
+        }
 
         .greeting-box {
             text-align: center;
@@ -236,7 +259,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="#services">Hosting Service</a></li>
-                <li><a href="#profiles">Vendor Profiles</a></li>
+                <li><a href="#domain">Domain</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -249,7 +272,7 @@
                 <div class="main">How to make websites in Hong Kong?</div>
                 <div class="description">
                     Checkout what option do you have before seeking for a vendor<br>
-                    Listing out Hosting Service, Vendor Profiles, Service List
+                    Listing out Hosting Service, Domain Retailer
                 </div>
             </div>
         </div>
@@ -283,13 +306,13 @@
                         <span class="number">2</span>
                     </div>
                     <div class="title">
-                        Vendor
+                        Domain retailer
                     </div>
                     <div class="subtitle">
                         Pick one you like to quote for price
                     </div>
-                    <a href='#profiles' class="btn btn-primary btn-block">
-                        Checkout the vendor profile
+                    <a href='#domain' class="btn btn-primary btn-block">
+                        Checkout the retailers profile
                     </a>
                 </div>
             </div>
@@ -301,9 +324,8 @@
     {{- hosting | safe -}}
 </section>
 
-<section id="profiles" class="bg">
-    <h1 class="title">Vendor</h1>
-    To be completed...
+<section id="domain" class="bg">
+    {{- domain | safe -}}
 </section>
 
 
@@ -331,5 +353,21 @@
     $('section table').addClass('table')
   }(window.jQuery)
 </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80274750-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80274750-2', {
+    'linker': {
+      'domains': ['tonyhhyip.me'],
+      'accept_incoming': true
+    }
+  });
+</script>
+
 </body>
 </html>
