@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="description-box">
-                <p>Vendor pricing almost higher then you think.</p>
+                <p>An unique domain would help other remember your website easier.</p>
                 <p>For most of the case, buying domain yourself is a better choice.</p>
                 <p>DNS, webhosting etc. For these common features, most of the service would provide.</p>
-                <p> Domain price may fluctuate, we does not guarantee to provide the most accurate information.</p>
+                <p>Domain price may fluctuate, we does not guarantee to provide the most accurate information.</p>
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
         </div>
         <div class='col-md-6'>
             <div class="alert alert-success" role="alert">
-                <strong>上次更新資料時間</strong>：2017-11-17 22:07
+                <strong>Last Modified</strong>：2017-11-17 22:07
             </div>
         </div>
     </div>
