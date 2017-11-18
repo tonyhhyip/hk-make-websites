@@ -1,0 +1,518 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="description" content="How to make websites in Hong Kong?">
+    <meta property="og:description" content="How to make websites in Hong Kong?">
+    <meta property="og:site_name" content="How to make websites in Hong Kong?">
+    <meta property="og:title" content="How to make websites in Hong Kong?">
+    <title>How to make websites in Hong Kong?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar-inverse {
+            background: #222;
+            border-color: #080808;
+            border-radius: 0;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background: #337ab7;
+            border-color: #2e6da4;
+        }
+
+        .alert-info {
+            color: #31708f;
+            backgroun: #d9edf7;
+            border-color: #bce8f1;
+        }
+
+        .alert-success {
+            color: #3c763d;
+            background: #dff0d8;
+            border-color: #d6e9c6;
+        }
+
+        .greeting-box {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .greeting-box .main {
+            font-size: 1.6rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .greeting-box .description {
+            font-size: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .greeting-box {
+                margin-top: 25px;
+                margin-bottom: 55px;
+            }
+            .greeting-box .main {
+                font-size: 2.5rem;
+            }
+            .greeting-box .description {
+                font-size: 1.5rem;
+            }
+        }
+
+
+        .card {
+            border: 1px solid #E0E0E0;
+            border-radius: 2px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 2px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+
+        .step-box {
+            margin-bottom: 15px;
+        }
+
+        .number-box {
+            text-align: center;
+            display: none;
+        }
+
+        .number {
+            background: #E0E0E0;
+            color: white;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .step-box .title {
+            font-weight: bold;
+            font-size: 1.33rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .step-box .subtitle {
+            text-align: center;
+            font-size: 1rem;
+            color: #757575;
+            margin-bottom: 15px;
+        }
+
+        .step-box .description {
+            min-height: 220px;
+            font-size: 1rem;
+            display: none;
+        }
+
+        .step-box a {
+
+        }
+
+        .bg {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .bg > .title {
+            text-align: center;
+            font-size: 1.33rem;
+            margin-bottom: 15px;
+        }
+
+        .bg.-grey {
+            background: #F5F5F5;
+        }
+
+        .bg .description-box {
+            text-align: center;
+            font-size: 1rem;
+            color: #616161;
+        }
+
+        .bg .cta {
+            margin-top: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .bg {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+            .bg > .title {
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            .bg .cta {
+                margin-top: 1.5rem;
+            }
+        }
+
+        html {
+            font-size: 16px;
+        }
+        @media (min-width: 768px) {
+            html {
+                font-size: 18px;
+            }
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .item-box {
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            background-color: white;
+        }
+
+        .item-box:nth-child(even) {
+            background-color: #F5F5F5;
+        }
+
+        .item-box.-header {
+            font-weight: bold;
+        }
+
+        .item-box .title {
+            font-weight: bold;
+        }
+
+        .mobile-hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-color: #BDBDBD;
+            border-style: dashed;
+            border-top-width: 2px;
+        }
+
+        .header-box .title {
+            font-size: 1.33rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .header-box .description {
+            font-size: 1rem;
+            color: #616161;
+        }
+
+        #return-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.7);
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+            border-radius: 35px;
+            -webkit-border-radius: 35px;
+            -moz-border-radius: 35px;
+            z-index: 10;
+        }
+        #return-to-top i {
+            color: #fff;
+            margin: 0;
+            position: relative;
+            left: 16px;
+            top: 13px;
+            font-size: 19px;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        section table {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">How to make websites in Hong Kong?</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#services">Hosting Service</a></li>
+                <li><a href="#domain">Domain</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="greeting-box">
+                <div class="main">How to make websites in Hong Kong?</div>
+                <div class="description">
+                    Checkout what option do you have before seeking for a vendor<br>
+                    Listing out Hosting Service, Domain Retailer
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg -grey" id='top'>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <div class="step-box card">
+                    <div class="number-box">
+                        <span class="number">1</span>
+                    </div>
+                    <div class="title">
+                        Hosting Service
+                    </div>
+                    <div class="subtitle">
+                        Check if there is one suitable
+                    </div>
+                    <a href='#services' class="btn btn-primary btn-block">
+                        Checkout the hosting service
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="step-box card">
+                    <div class="number-box">
+                        <span class="number">2</span>
+                    </div>
+                    <div class="title">
+                        Domain retailer
+                    </div>
+                    <div class="subtitle">
+                        Pick one you like to quote for price
+                    </div>
+                    <a href='#domain' class="btn btn-primary btn-block">
+                        Checkout the retailers profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="services" class="bg"><h1 id="hosting-service">Hosting Service</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="description-box">
+                <p>Vendor pricing almost higher then you think.</p>
+                <p>For most of the case, using DIY hosting service is a better choice.</p>
+                <p>Custom link, mobile view, etc. For these common request, most of the service would provide.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class='row'>
+        <div class='col-md-6'>
+            <div class="alert alert-info" role="alert">
+                <strong>Continue Updating</strong>：<a href='https://github.com/tonyhhyip/hk-make-websites/blob/master/hosting.md' target="_blank">Click to edit</a>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <div class="alert alert-success" role="alert">
+                <strong>Last Modified</strong>：2017-11-17 22:07
+            </div>
+        </div>
+    </div>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Support Feature</th>
+<th>Addition Description</th>
+<th>Price</th>
+<th>Website</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WordPress</td>
+<td>Blog, Introduction Page</td>
+<td>One of the most famous CMS in the world</td>
+<td>Free HK$0/month, Personal HK$30/month, Premium HK$63/month, Business HK$199/month</td>
+<td><a href="https://wordpress.com/">https://wordpress.com/</a></td>
+</tr>
+<tr>
+<td>SquareSpace</td>
+<td>Blog, E-Commerce, Gallaries</td>
+<td>Stable and fast site hosting, Well-known for WYSIWYG editor</td>
+<td>Basic Website US$22/month, Business Website US$35/month, Basic online store US$40/month,Advanced online store US$61/month</td>
+<td><a href="https://squarespace.com/">https://squarespace.com/</a></td>
+</tr>
+<tr>
+<td>GitHub Pages</td>
+<td>Blog, Project Page, Organization Page</td>
+<td>Static Page hosting, support HTML and Jekyll natively, Push code using Git</td>
+<td>Free HK$0/month</td>
+<td><a href="https://pages.github.com/">https://pages.github.com/</a></td>
+</tr>
+<tr>
+<td>Blogger</td>
+<td>Blog</td>
+<td>Blog hosting service powered by Google</td>
+<td>Free HK$0/month</td>
+<td><a href="https://www.blogger.com">https://www.blogger.com</a></td>
+</tr>
+<tr>
+<td>Appernetic</td>
+<td>Content Publishing, Blog</td>
+<td>Create static site using web ui, powered by Hugo</td>
+<td>Free US$0/month, Paid US$0.5-20.5/month</td>
+<td><a href="https://appernetic.io">https://appernetic.io</a></td>
+</tr>
+<tr>
+<td>Ghost</td>
+<td>Content Publishing， Blog</td>
+<td>Fully open source, powered by node.js</td>
+<td>Personal US$29/month, Advanced US$59/month, Team US$79/month, Business US$269/month</td>
+<td><a href="https://ghost.org">https://ghost.org/</a></td>
+</tr>
+<tr>
+<td>Google Sites</td>
+<td>Organization page, Project Page</td>
+<td>No technical skills required. Similar to SquareSpace.</td>
+<td>Free HK$0/month</td>
+<td><a href="https://sites.google.com/">https://sites.google.com/</a></td>
+</tr>
+<tr>
+<td>Wix</td>
+<td>E-commerce, Blog, Personal Site, Business Site</td>
+<td>No technical skills required. Similar to SquareSpace.</td>
+<td>Free US$0/month, connect Domain US$4.50/month, Combo US$8.50/month, Unlimited US$12.50/month, eCommerce US$16.50/month, VIP US$24.50/month</td>
+<td><a href="https://www.wix.com/">https://www.wix.com/</a></td>
+</tr>
+<tr>
+<td>strikingly</td>
+<td>Business or Personal Website, E-commerce</td>
+<td>No technical skills required. Similar to SquareSpace.</td>
+<td>Free US$0/month, Limited US$12/month, Pro US$20/month</td>
+<td><a href="https://www.strikingly.com/">https://www.strikingly.com/</a></td>
+</tr>
+</tbody>
+</table>
+<p></div></p>
+</section>
+
+<section id="domain" class="bg"><h1 id="domain-retailer">Domain Retailer</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="description-box">
+                <p>An unique domain would help other remember your website easier.</p>
+                <p>For most of the case, buying domain yourself is a better choice.</p>
+                <p>DNS, webhosting etc. For these common features, most of the service would provide.</p>
+                <p>Domain price may fluctuate, we does not guarantee to provide the most accurate information.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class='row'>
+        <div class='col-md-6'>
+            <div class="alert alert-info" role="alert">
+                <strong>Continue Updating</strong>：<a href='https://github.com/tonyhhyip/hk-make-websites/blob/master/domain.md' target="_blank">Click to edit</a>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <div class="alert alert-success" role="alert">
+                <strong>Last Modified</strong>：2017-11-17 22:07
+            </div>
+        </div>
+    </div>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Support Feature</th>
+<th>Addition Description</th>
+<th>Price</th>
+<th>Website</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gandi</td>
+<td>Domain,Whois Privacy, Email Hosting, Webhosting,SSl Certs</td>
+<td>one of the first domain name registrars approved by ICANN in France, ICANN accredited</td>
+<td>.COM HK$120.13/year, .ORG HK$133.3/year, .NET HK$139.5/year</td>
+<td><a href="https://gandi.net/">https://gandi.net</a></td>
+</tr>
+</tbody>
+</table>
+<p></div></p>
+</section>
+
+
+<a href="#top" id='return-to-top'><i class="fa fa-chevron-up"></i></a>
+<br>
+
+<div class="container">
+    <div class='row'>
+        <div class='col-md-12'>
+            <br>
+            <p class="pull-left">
+                Maintained by <a href='https://tonyhhyip.me' target="_blank">Tony Yip</a>
+            </p>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  !function ($) {
+    $('section h1').addClass('title');
+    $('section table').addClass('table')
+  }(window.jQuery)
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80274750-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80274750-2', {
+    'linker': {
+      'domains': ['tonyhhyip.me'],
+      'accept_incoming': true
+    }
+  });
+</script>
+
+</body>
+</html>
