@@ -31,6 +31,10 @@
 | GitHub Pages | Blog, Project Page, Organization Page | Static Page hosting, support HTML and Jekyll natively, Push code using Git | Free HK$0/month | [https://pages.github.com/](https://pages.github.com/) |
 | Blogger | Blog | Blog hosting service powered by Google | Free HK$0/month | [https://www.blogger.com](https://www.blogger.com) |
 | Appernetic | Content Publishing, Blog | Create static site using web ui, powered by Hugo | Free US$0/month, Paid US$0.5-20.5/month | [https://appernetic.io](https://appernetic.io)|
+| Ghost | Content Publishing， Blog | Fully open source, powered by node.js | Personal US$29/month, Advanced US$59/month, Team US$79/month, Business US$269/month | [https://ghost.org/](https://ghost.org) |
+| Google Sites | Organization page, Project Page | No technical skills required. Similar to SquareSpace. | Free HK$0/month | [https://sites.google.com/](https://sites.google.com/) |
+| Wix | E-commerce, Blog, Personal Site, Business Site | No technical skills required. Similar to SquareSpace. | Free US$0/month, connect Domain US$4.50/month, Combo US$8.50/month, Unlimited US$12.50/month, eCommerce US$16.50/month, VIP US$24.50/month | [https://www.wix.com/](https://www.wix.com/) |
+| strikingly | Business or Personal Website, E-commerce | No technical skills required. Similar to SquareSpace. | Free US$0/month, Limited US$12/month, Pro US$20/month | [https://www.strikingly.com/](https://www.strikingly.com/) |
 
 
 </div>
